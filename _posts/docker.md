@@ -511,6 +511,3 @@ sudo docker run -it --network=app --name=test2 ubuntu /bin/bash
 ## docker-compose
 
 目前为止，我们讨论的都是单容器或者说是单服务的情况。在实际应用场景中，用户可用的应用程序往往是由多种服务协作完成的，比如一个可访问的网页，它既需要 apache 或者 nginx 等 web 服务，也需要 mysql 或 redis 等数据库服务。使用前面的知识，我们只能 `docker run` 两次来分别实现 apache 容器的服务和 mysql 容器的服务。docker-compose 的存在，使得我们可以一次启动所有的服务，以达到网页可访问的状态。docker-compose 可以简单地理解为一种多容器管理技术。
-
-![图片测试](1.jpeg)
-![图片测试](docker/1.jpeg)
